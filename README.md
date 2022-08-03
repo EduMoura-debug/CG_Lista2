@@ -1,30 +1,36 @@
 # Lista 2 de Computação Gráfica
 
-## 1 
+## 1-
+Arquivos:
 
-### Como executar
-
-
-## 2
-
-### Como executar
+Como executar:
 
 
-## 3
+## 2-
+Arquivos:
 
-### Como executar
-
-
-## 4 
-
-### Como executar
+Como executar:
 
 
-## 5 
+## 3-
+Arquivos:
 
-### Como executar
+Como executar:
 
 
-## 6
+## 4-
+Arquivos:
 
-### Como executar
+Como executar:
+
+
+## 5- 
+Arquivos:
+
+Como executar:
+
+
+## 6-
+Arquivos:
+
+Como executar:
