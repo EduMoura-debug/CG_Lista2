@@ -3,7 +3,7 @@
 ## 1- Textura – Dado
 Arquivos: dado.py, dado.png
 
-Como executar: No diretório do arquivo, escrever "python3 dado.py"
+Como executar: No diretório do arquivo, escrever *python3 dado.py*
 
 
 ## 2- Textura – Esfera – “Planeta” 
