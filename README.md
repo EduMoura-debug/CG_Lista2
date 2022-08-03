@@ -9,7 +9,7 @@ Como executar: No diretório do arquivo, escrever "python3 dado.py"
 ## 2- Textura – Esfera – “Planeta” 
 Arquivos: mundo.py, mapa.png
 
-Como executar: No diretório do arquivo, escrever "python3 mundo.py"
+Como executar: No diretório do arquivo, escrever o comando *python3 mundo.py*
 
 
 ## 3- Funções implícitas - Paraboloide circular e hiperbólico 
