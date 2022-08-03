@@ -1,15 +1,15 @@
 # Lista 2 de Computação Gráfica
 
-## 1-
-Arquivos:
+## 1- Textura – Dado
+Arquivos: dado.py, dado.png
 
-Como executar:
+Como executar: No diretório do arquivo, escrever "python3 dado.py"
 
 
 ## 2-
-Arquivos:
+Arquivos: mundo.py, mapa.png
 
-Como executar:
+Como executar: No diretório do arquivo, escrever "python3 mundo.py"
 
 
 ## 3-
