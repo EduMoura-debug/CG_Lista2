@@ -16,6 +16,24 @@ def InitGL(Width, Height):
     gluPerspective(45.0, float(Width)/float(Height), 0.1, 100.0)
     glMatrixMode(GL_MODELVIEW)
 
+    #LUZ!!!
+    mat_ambient = (0.4, 0.0, 0.0, 1.0)
+    mat_diffuse = (1.0, 0.0, 0.0, 1.0)
+    mat_specular = (1.0, 0.5, 0.5, 1.0)
+    mat_shininess = (50,)
+    light_position = (0, 10, 10)
+    glShadeModel(GL_SMOOTH)
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient)
+    glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse)
+    glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular)
+    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess)
+    glEnable(GL_LIGHTING)
+    glEnable(GL_LIGHT0)
+    glLightfv(GL_LIGHT0, GL_POSITION, light_position)
+    glEnable(GL_DEPTH_TEST)
+    glEnable(GL_MULTISAMPLE)
+    gluLookAt(0,0,10,0,0,0,0,1,0)
+
 def calculaNormal(v0,v1,v2):
     x = 0
     y = 1
@@ -92,7 +110,7 @@ sdl2.SDL_GL_SetAttribute(sdl2.SDL_GL_CONTEXT_PROFILE_MASK,sdl2.SDL_GL_CONTEXT_PR
 sdl2.SDL_GL_SetAttribute(sdl2.SDL_GL_DOUBLEBUFFER, 1)
 sdl2.SDL_GL_SetAttribute(sdl2.SDL_GL_DEPTH_SIZE, 24)
 sdl2.SDL_GL_SetSwapInterval(1)
-window = sdl2.SDL_CreateWindow(b"Paraboloide", sdl2.SDL_WINDOWPOS_CENTERED, sdl2.SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, sdl2.SDL_WINDOW_OPENGL | sdl2.SDL_WINDOW_SHOWN)
+window = sdl2.SDL_CreateWindow(b"Paraboloide Iluminado", sdl2.SDL_WINDOWPOS_CENTERED, sdl2.SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, sdl2.SDL_WINDOW_OPENGL | sdl2.SDL_WINDOW_SHOWN)
 if not window:
     sys.stderr.write("Error: Could not create window\n")
     exit(1)
