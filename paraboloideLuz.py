@@ -67,8 +67,6 @@ yf=2.5
 dx= (xf-x0)/(N)
 dy= (yf-y0)/(N)
 
-#def emiteVertex(x,y):
-    
 
 def desenha():
     global a
