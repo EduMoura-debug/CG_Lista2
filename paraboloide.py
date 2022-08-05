@@ -38,15 +38,15 @@ def cor(i,j):
     return r, g, b
 
 def f(x,y):
-	return x**2 - y**2   #Mudar pra +
+	return x**2 - y**2   
 
-N = 20
+N = 30
 a=0
-r=1
-x0=-2
-xf=2
-y0=-2
-yf=2
+r=2
+x0=-2.5
+xf=2.5
+y0=-2.5
+yf=2.5
 dx= (xf-x0)/(N)
 dy= (yf-y0)/(N)
 

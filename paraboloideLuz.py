@@ -16,12 +16,11 @@ def InitGL(Width, Height):
     gluPerspective(45.0, float(Width)/float(Height), 0.1, 100.0)
     glMatrixMode(GL_MODELVIEW)
 
-    #LUZ!!!
     mat_ambient = (0.4, 0.0, 0.0, 1.0)
     mat_diffuse = (1.0, 0.0, 0.0, 1.0)
     mat_specular = (1.0, 0.5, 0.5, 1.0)
     mat_shininess = (50,)
-    light_position = (0, 10, 10)
+    light_position = (30, 0, 10)
     glShadeModel(GL_SMOOTH)
     glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient)
     glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse)
@@ -56,15 +55,15 @@ def cor(i,j):
     return r, g, b
 
 def f(x,y):
-	return x**2 - y**2   #Mudar pra +
+	return x**2 - y**2  
 
-N = 20
+N = 30
 a=0
 r=1
-x0=-2
-xf=2
-y0=-2
-yf=2
+x0=-2.5
+xf=2.5
+y0=-2.5
+yf=2.5
 dx= (xf-x0)/(N)
 dy= (yf-y0)/(N)
 

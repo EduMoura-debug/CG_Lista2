@@ -84,7 +84,7 @@ def Cubo():
     glRotatef(a,1,0,0)
     glRotatef(a/4,0,1,0)
     glRotatef(a/2,0,0,1)
-    a += 1
+    a += 0.001
     glBegin(GL_QUADS)
     glTexCoord2f(0.0, 0.0); glVertex3f(-1.0, -1.0,  1.0)    
     glTexCoord2f(0.0, 1/2); glVertex3f( 1.0, -1.0,  1.0)   
@@ -142,7 +142,7 @@ def desenha():
     glTranslatef(0,0,0)
     Cubo()
     glPopMatrix()
-    a += 1
+    a += 0.03
 
 WINDOW_WIDTH = 800
 WINDOW_HEIGHT = 600
