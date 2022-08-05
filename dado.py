@@ -67,7 +67,7 @@ def LoadTextures():
 def InitGL(Width, Height):      
     LoadTextures()
     glEnable(GL_TEXTURE_2D)       
-    glClearColor(0.0, 0.0, 0.0, 0.0) 
+    glClearColor(0.3, 0.3, 0.3, 0.3) 
     glClearDepth(1.0)
     glDepthFunc(GL_LESS)               
     glEnable(GL_DEPTH_TEST)            

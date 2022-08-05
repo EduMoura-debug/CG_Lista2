@@ -7,7 +7,7 @@ import math
 
 
 def InitGL(Width, Height):             
-    glClearColor(0.0, 0.0, 0.0, 0.0) 
+    glClearColor(0.0, 0.0, 0.0, 0.0)
     glClearDepth(1.0)
     glDepthFunc(GL_LESS)               
     glEnable(GL_DEPTH_TEST)            
