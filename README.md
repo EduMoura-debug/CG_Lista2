@@ -18,7 +18,7 @@ Arquivos:
 Como executar:
 
 
-## 4- luminação (Prismas e Pirâmides)
+## 4- Iluminação (Prismas e Pirâmides)
 Arquivos:
 
 Como executar:
