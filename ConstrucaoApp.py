@@ -5,9 +5,6 @@ import ctypes
 import glm
 import math
 
-aurea = 1.61803398875
-Phi = aurea
-
 icoPositions = (( 0.000,  0.000,  1.000), ( 0.894,  0.000,  0.447), ( 0.276,  0.851,  0.447), (-0.724,  0.526,  0.447),
                 (-0.724, -0.526,  0.447), ( 0.276, -0.851,  0.447), ( 0.724,  0.526, -0.447), (-0.276,  0.851, -0.447), 
                 (-0.894,  0.000, -0.447), (-0.276, -0.851, -0.447), ( 0.724, -0.526, -0.447), ( 0.000,  0.000, -1.000))
@@ -89,7 +86,7 @@ class ConstrucaoApp(GLAPP):
         mvp = projection * camera * model
         GL.glUniformMatrix4fv(GL.glGetUniformLocation(self.pipeline, "MVP"),1,GL.GL_FALSE,glm.value_ptr(mvp))
         GL.glDrawArrays(GL.GL_TRIANGLES,0,240)
-        self.a += 0.01
+        self.a += 0.001
 
     def draw(self):
         GL.glClear(GL.GL_COLOR_BUFFER_BIT|GL.GL_DEPTH_BUFFER_BIT)
