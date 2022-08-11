@@ -20,13 +20,8 @@ class ToonTeapotApp(GLAPP):
         GL.glEnable(GL.GL_MULTISAMPLE)
 
         # Pipeline (shaders)
-        self.pipeline = self.loadPipeline("Toon")
+        self.pipeline = self.loadPipeline("SimplePipeline") # Mudar Shadder apenas
         GL.glUseProgram(self.pipeline)
-
-        # Texture
-        GL.glActiveTexture(GL.GL_TEXTURE0)
-        self.loadTexture("./textures/uv_grid_opengl.png")
-        GL.glUniform1i(GL.glGetUniformLocation(self.pipeline, "textureSlot"),0)
 
         self.arrayBufferId = None
 
@@ -47,11 +42,6 @@ class ToonTeapotApp(GLAPP):
             GL.glBindBuffer(GL.GL_ARRAY_BUFFER, idVertexBuffer)
             GL.glBufferData(GL.GL_ARRAY_BUFFER, len(vertices)*vertices.itemsize, ctypes.c_void_p(vertices.buffer_info()[0]), GL.GL_STATIC_DRAW)
             GL.glVertexAttribPointer(0,3,GL.GL_FLOAT,GL.GL_FALSE,0,ctypes.c_void_p(0))
-
-            idTextureBuffer = GL.glGenBuffers(1)
-            GL.glBindBuffer(GL.GL_ARRAY_BUFFER, idTextureBuffer)
-            GL.glBufferData(GL.GL_ARRAY_BUFFER, len(uvs)*uvs.itemsize, ctypes.c_void_p(uvs.buffer_info()[0]), GL.GL_STATIC_DRAW)
-            GL.glVertexAttribPointer(1,2,GL.GL_FLOAT,GL.GL_FALSE,0,ctypes.c_void_p(0))
 
             idIndex = GL.glGenBuffers(1)
             GL.glBindBuffer(GL.GL_ELEMENT_ARRAY_BUFFER, idIndex)
