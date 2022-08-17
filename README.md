@@ -29,7 +29,7 @@ Arquivos: paraboloideLuz.py
 
 Como executar: No diretório do arquivo, executar o comando: 
 ```
-python3 paraboloideLuz.py
+python paraboloideLuz.py
 ```
 
 ## 5- Construção (novo OpenGL)
@@ -37,7 +37,7 @@ Arquivos: GLAPP.py, pipeline/SimplePipeline/SimplePipeline.vert, pipeline/Simple
 
 Como executar: No diretório onde está localizado o arquivo ConstrucaoApp.py, executar o comando: 
 ```
-python3 ConstrucaoApp.py
+python ConstrucaoApp.py
 ```
 
 ## 6- Shadder (novo OpenGL)
