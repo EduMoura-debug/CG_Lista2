@@ -1,43 +1,43 @@
 # Lista 2 de Computação Gráfica
 
 ## 1- Textura – Dado
-Arquivos: dado.py, dado.png
+Arquivos: DadoTextura.py, dado.png
 
 Como executar: No diretório do arquivo, executar o comando: 
 ```python
-python dado.py
+python DadoTextura.py
 #ou
-python3 dado.py
+python3 DadoTextura.py
 ```
 
 ## 2- Textura – Esfera – “Planeta” 
-Arquivos: mundo.py, mapa.png
+Arquivos: Terra.py, mapa.png
 
 Como executar: No diretório do arquivo, executar o comando: 
 ```python
-python mundo.py
+python Terra.py
 #ou
-python3 mundo.py
+python3 Terra.py
 ```
 
 ## 3- Funções implícitas - Paraboloide circular e hiperbólico 
-Arquivos: paraboloide.py
+Arquivos: ParaboloideSimples.py
 
 Como executar: No diretório do arquivo, executar o comando: 
 ```python
-python paraboloide.py
+python ParaboloideSimples.py
 #ou
-python3 paraboloide.py
+python3 ParaboloideSimples.py
 ```
 
 ## 4- Iluminação (Prismas e Pirâmides)
-Arquivos: paraboloideLuz.py
+Arquivos: LuzParaboloide.py
 
 Como executar: No diretório do arquivo, executar o comando: 
 ```python
-python paraboloideLuz.py
+python LuzParaboloide.py
 #ou
-python3 paraboloideLuz.py
+python3 LuzParaboloide.py
 ```
 
 ## 5- Construção (novo OpenGL)
@@ -51,7 +51,7 @@ python3 ConstrucaoApp.py
 ```
 
 ## 6- Shadder (novo OpenGL)
-Arquivos: GLAPP.py, pipeline/SimplePipeline/Toon.vert, pipeline/SimplePipeline/Toon.frag, ToonTeaṕotApp.py
+Arquivos: GLAPP.py, pipeline/Toon/Toon.vert, pipeline/Toon/Toon.frag, ToonTeaṕotApp.py
 
 Como executar: No diretório onde está localizado o arquivo ToonTeapotApp.py, executar o comando: 
 ```python
