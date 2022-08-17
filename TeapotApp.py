@@ -11,7 +11,7 @@ class ToonTeapotApp(GLAPP):
 
     def setup(self):
         # Window setup
-        self.title("Toon Teapot")
+        self.title("Shader Teapot")
         self.size(1100,1100)
 
         # OpenGL Initialization
@@ -20,7 +20,7 @@ class ToonTeapotApp(GLAPP):
         GL.glEnable(GL.GL_MULTISAMPLE)
 
         # Pipeline (shaders)
-        self.pipeline = self.loadPipeline("SimplePipeline") # Mudar Shadder apenas
+        self.pipeline = self.loadPipeline("Toon") 
         GL.glUseProgram(self.pipeline)
 
         self.arrayBufferId = None
@@ -49,12 +49,13 @@ class ToonTeapotApp(GLAPP):
 
         projection = glm.perspective(math.pi/4,self.width/self.height,0.1,100)
         camera = glm.lookAt(glm.vec3(0,0,20),glm.vec3(0),glm.vec3(0,1,0))
-        model = glm.rotate(a,glm.vec3(0,0,1)) * glm.rotate(a,glm.vec3(0,1,0)) * glm.rotate(a,glm.vec3(1,0,0)) 
+        #model = glm.rotate(a,glm.vec3(0,0,1)) * glm.rotate(a,glm.vec3(0,1,0)) * glm.rotate(a,glm.vec3(1,0,0)) 
+        model = glm.rotate(a,glm.vec3(0,1,0))
         mvp = projection * camera * model
         GL.glUniformMatrix4fv(GL.glGetUniformLocation(self.pipeline, "MVP"),1,GL.GL_FALSE,glm.value_ptr(mvp))
         GL.glBindVertexArray(self.arrayBufferId)
         GL.glDrawElements(GL.GL_TRIANGLES, self.N, GL.GL_UNSIGNED_INT, ctypes.c_void_p(0))
-        a += 0.005
+        a += 0.001
 
     def draw(self):
         # clear screen and depth buffer

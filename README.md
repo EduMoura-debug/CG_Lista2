@@ -13,21 +13,21 @@ Como executar: No diretório do arquivo, executar o comando *python3 mundo.py*
 
 
 ## 3- Funções implícitas - Paraboloide circular e hiperbólico 
-Arquivos:
+Arquivos: paraboloide.py
 
-Como executar:
+Como executar: No diretório do arquivo, executar o comando *python3 paraboloide.py*
 
 
 ## 4- Iluminação (Prismas e Pirâmides)
-Arquivos:
+Arquivos: paraboloideLuz.py
 
-Como executar:
+Como executar: No diretório do arquivo, executar o comando *python3 paraboloideLuz.py*
 
 
 ## 5- Construção (novo OpenGL)
-Arquivos:
+Arquivos: GLAPP.py, pipeline/SimplePipeline/SimplePipeline.vert, pipeline/SimplePipeline/SimplePipeline.frag, ConstrucaoApp.py
 
-Como executar:
+Como executar: No diretório onde está localizado o arquivo ConstrucaoApp.py, executar o comando *python3 ConstrucaoApp.py*
 
 
 ## 6- Shadder (novo OpenGL)
