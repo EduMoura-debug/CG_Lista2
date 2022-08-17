@@ -4,7 +4,7 @@
 Arquivos: dado.py, dado.png
 
 Como executar: No diretório do arquivo, executar o comando: 
-```
+```python
 python dado.py
 #ou
 python3 dado.py
@@ -14,7 +14,7 @@ python3 dado.py
 Arquivos: mundo.py, mapa.png
 
 Como executar: No diretório do arquivo, executar o comando: 
-```
+```python
 python mundo.py
 #ou
 python3 mundo.py
@@ -24,7 +24,7 @@ python3 mundo.py
 Arquivos: paraboloide.py
 
 Como executar: No diretório do arquivo, executar o comando: 
-```
+```python
 python paraboloide.py
 #ou
 python3 paraboloide.py
@@ -34,7 +34,7 @@ python3 paraboloide.py
 Arquivos: paraboloideLuz.py
 
 Como executar: No diretório do arquivo, executar o comando: 
-```
+```python
 python paraboloideLuz.py
 #ou
 python3 paraboloideLuz.py
@@ -44,7 +44,7 @@ python3 paraboloideLuz.py
 Arquivos: GLAPP.py, pipeline/SimplePipeline/SimplePipeline.vert, pipeline/SimplePipeline/SimplePipeline.frag, ConstrucaoApp.py
 
 Como executar: No diretório onde está localizado o arquivo ConstrucaoApp.py, executar o comando: 
-```
+```python
 python ConstrucaoApp.py
 #ou
 python3 ConstrucaoApp.py
@@ -54,7 +54,7 @@ python3 ConstrucaoApp.py
 Arquivos: GLAPP.py, pipeline/SimplePipeline/Toon.vert, pipeline/SimplePipeline/Toon.frag, ToonTeaṕotApp.py
 
 Como executar: No diretório onde está localizado o arquivo ToonTeaṕotApp.py, executar o comando: 
-```
+```python
 python ToonTeaṕotApp.py
 #ou
 python3 ToonTeapotApp.py
