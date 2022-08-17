@@ -16,6 +16,23 @@ def InitGL(Width, Height):
     gluPerspective(45.0, float(Width)/float(Height), 0.1, 100.0)
     glMatrixMode(GL_MODELVIEW)
 
+    mat_ambient = (0.4, 0.0, 0.0, 1.0)
+    mat_diffuse = (1.0, 0.0, 0.0, 1.0)
+    mat_specular = (1.0, 0.5, 0.5, 1.0)
+    mat_shininess = (50,)
+    light_position = (30, 0, 10)
+    glShadeModel(GL_SMOOTH)
+    glMaterialfv(GL_FRONT, GL_AMBIENT, mat_ambient)
+    glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse)
+    glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular)
+    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess)
+    glEnable(GL_LIGHTING)
+    glEnable(GL_LIGHT0)
+    glLightfv(GL_LIGHT0, GL_POSITION, light_position)
+    glEnable(GL_DEPTH_TEST)
+    glEnable(GL_MULTISAMPLE)
+    gluLookAt(0,0,10,0,0,0,0,1,0)
+
 def calculaNormal(v0,v1,v2):
     x = 0
     y = 1
@@ -38,11 +55,11 @@ def cor(i,j):
     return r, g, b
 
 def f(x,y):
-	return x**2 - y**2   
+	return x**2 - y**2  
 
 N = 30
 a=0
-r=2
+r=1
 x0=-2.5
 xf=2.5
 y0=-2.5
@@ -71,8 +88,6 @@ def desenha():
             glVertex3f(x,y,z1)
             glColor3f(1,1,0)
             glVertex3f(x,y+dy,z2)
-#            glColor3f(1,1,0)
-#            glVertex3f(x+dx,y,z3)
 
 
             x += dx   
@@ -90,7 +105,7 @@ sdl2.SDL_GL_SetAttribute(sdl2.SDL_GL_CONTEXT_PROFILE_MASK,sdl2.SDL_GL_CONTEXT_PR
 sdl2.SDL_GL_SetAttribute(sdl2.SDL_GL_DOUBLEBUFFER, 1)
 sdl2.SDL_GL_SetAttribute(sdl2.SDL_GL_DEPTH_SIZE, 24)
 sdl2.SDL_GL_SetSwapInterval(1)
-window = sdl2.SDL_CreateWindow(b"Paraboloide", sdl2.SDL_WINDOWPOS_CENTERED, sdl2.SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, sdl2.SDL_WINDOW_OPENGL | sdl2.SDL_WINDOW_SHOWN)
+window = sdl2.SDL_CreateWindow(b"Paraboloide Iluminado", sdl2.SDL_WINDOWPOS_CENTERED, sdl2.SDL_WINDOWPOS_CENTERED, WINDOW_WIDTH, WINDOW_HEIGHT, sdl2.SDL_WINDOW_OPENGL | sdl2.SDL_WINDOW_SHOWN)
 if not window:
     sys.stderr.write("Error: Could not create window\n")
     exit(1)

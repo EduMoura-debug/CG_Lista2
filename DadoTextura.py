@@ -124,13 +124,6 @@ def Cubo():
     glEnd()                
     glPopMatrix()
 
-    # glColor3f(0,0.5,0)
-    # glBegin(GL_LINES)
-    # for linha in linhas:
-    #     for vertice in linha:
-    #         glVertex3fv(vertices[vertice])
-    # glEnd()
-
 a = 0
 
 
