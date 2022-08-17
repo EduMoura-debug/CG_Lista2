@@ -53,9 +53,9 @@ python3 ConstrucaoApp.py
 ## 6- Shadder (novo OpenGL)
 Arquivos: GLAPP.py, pipeline/SimplePipeline/Toon.vert, pipeline/SimplePipeline/Toon.frag, ToonTeaṕotApp.py
 
-Como executar: No diretório onde está localizado o arquivo ToonTeaṕotApp.py, executar o comando: 
+Como executar: No diretório onde está localizado o arquivo ToonTeapotApp.py, executar o comando: 
 ```python
-python ToonTeaṕotApp.py
+python ToonTeapotApp.py
 #ou
 python3 ToonTeapotApp.py
 ```
